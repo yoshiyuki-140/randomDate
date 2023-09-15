@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.print-canvas {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+}
