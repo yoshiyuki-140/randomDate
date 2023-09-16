@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from 
 
 # Create your views here.
 
 
-def top():
+def top(request):
+    snippet = Snippet.
     pass
