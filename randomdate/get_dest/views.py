@@ -1,9 +1,15 @@
 from django.shortcuts import render
-from 
+from get_dest.models import Dest,URLs
 
 # Create your views here.
 
 
+
 def top(request):
-    snippet = Snippet.
     pass
+    
+
+def get_dest(request):
+    dest = Dest.objects.all()
+    context = {'dest': dest}
+    return render(request, 'get_dest/dest.html', context)
