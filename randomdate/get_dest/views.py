@@ -1,5 +1,5 @@
-from django.shortcuts import render,get_object_or_404
-from get_dest.models import Dest,URLs
+from django.shortcuts import render
+from get_dest.models import Dest
 
 # Create your views here.
 
@@ -10,5 +10,5 @@ def top(request):
     
 def dest(request,dest_id):
     dest_object = Dest.objects.get(pk=dest_id)
-    return render(request, 'dest.html', {'dest_object':dest_object})
+    return render(request, 'main.html', {'dest_object':dest_object})
 

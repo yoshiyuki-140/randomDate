@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<div>
+  <div>
+    <!-- 挨拶「お疲れさまでした等」 -->
+    <h2>🥰お疲れさまでした!🥰</h2>
+    <p>
+      次の行先は
+      <span class="next_dest">
+        {{ dest.dest_name }}
+      </span>
+      です。
+    </p> 
+  </div>
+  <div class="map">
+      <!-- ここにgoogle mapを表示させる -->
+      {{ dest.iframe }}}
+  </div>
+</div>
+
+{% endblock main %}

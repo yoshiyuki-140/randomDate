@@ -1,11 +1,43 @@
+{% load static %}
+
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+  <title>RandomDate</title>
 </head>
+
 <body>
-    <h1>この下にblock mainの中身が来る</h1>
+  <header class="header">
+    <div class="header-inner">
+      <h1>
+        RandomDate
+      </h1>
+      <img src="{% static "img/Driver-kun.png" %}" alt="driver-kun" class="driver-img">
+    </div>
+  </header>
+  <main>
     {% block main %}{% endblock main %}
+      </main>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h1>
+          RandomDate
+        </h1>
+      </div>
+      <div>
+        <small>&copy;KIT-teamB</small>
+      </div>
+
+      <div>
+        <img src="{% static "img/Driver-kun.png" %}" alt="driver-kun" class="driver-img">
+      </div>
+    </div>
+  </footer>
+  {% comment %} <script src="./script.js"></script> {% endcomment %}
 </body>
+
 </html>

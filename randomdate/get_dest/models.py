@@ -2,13 +2,16 @@ from django.db import models
 
 # Create your models here.
 
-
-class URLs(models.Model):
-    # QRコードから読み込んだurlの長さの最大値はわからないので、とりあえず256を最大値にしてる
-    # バグ起きたらそのつど編集してね
-    url = models.CharField(max_length=256)
-
-
 class Dest(models.Model):
-    url = models.ForeignKey(URLs, on_delete=models.CASCADE)
-    dest = models.CharField(max_length=256)
+    iframe = models.CharField(max_length=600)
+    dest_name = models.CharField(max_length=256)
+    # created_at = models.DateTimeField(auto_now_add=True)
+
+
+# class Dest(models.Model):
+    # iframe = models.CharField(max_length=600)
+    # facility_name = models.CharField(max_length=256)
+    # open_hour = models.DateTimeField()
+    # close_hour = models.DateTimeField()
+    # created_at = models.DateTimeField(auto_now_add=True)
+    # last_entry_time = models.DateTimeField(null=True, blank=True)
