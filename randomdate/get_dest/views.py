@@ -10,5 +10,5 @@ def top(request):
     
 def dest(request,dest_id):
     dest_object = Dest.objects.get(pk=dest_id)
-    return render(request, 'main.html', {'dest_object':dest_object})
+    return render(request, 'base.html', {'dest_object':dest_object})
 
