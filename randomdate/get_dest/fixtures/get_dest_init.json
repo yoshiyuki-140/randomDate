@@ -17,7 +17,7 @@
         "model": "get_dest.Dest",
         "pk": 3,
         "fields": {
-            "dest_name": "金箔工芸館"
+            "dest_name": "安江金箔工芸館"
         }
     },
     {
@@ -32,13 +32,6 @@
         "pk": 5,
         "fields": {
             "dest_name": "いしかわ生活工芸ミュージアム"
-        }
-    },
-    {
-        "model": "get_dest.Dest",
-        "pk": 6,
-        "fields": {
-            "dest_name": "国立工芸館"
         }
     }
 ]
