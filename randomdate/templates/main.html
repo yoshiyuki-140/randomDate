@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block main %}
-
 <div>
   <div>
     <!-- 挨拶「お疲れさまでした等」 -->
@@ -17,7 +16,24 @@
   </div>
   <div class="map">
       <!-- ここにgoogle mapを表示させる -->
-      {{ dest.iframe }}}
+      {% if dest.id == 1 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.8064723024777!2d136.65798397533098!3d36.558778972316944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff833879dfbd437%3A0xae072341cedb9b90!2z6YeR5rKi5biC56uL5Lit5p2R6KiY5b-1576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1695005098654!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+      {% if dest.id == 2 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.6897364331444!2d136.65550577533116!3d36.56159327231602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff833811d0d2e81%3A0x3b21865f6aa2603e!2z6YeR5rKi6IO95qW9576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1695005878142!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+      {% if dest.id == 3 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.1878413519044!2d136.6632410753318!3d36.57369097231254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8337335bf6b9b%3A0x30eea5034ceeaa25!2z6YeR5rKi5biC56uL5a6J5rGf6YeR566U5bel6Iq46aSo!5e0!3m2!1sja!2sjp!4v1695005920194!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+      {% if dest.id == 4 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.719685398355!2d136.6559501753311!3d36.56087127231636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff83380db53b801%3A0x512a01db8b6568c1!2z6YeR5rKiMjHkuJbntIDnvo7ooZPppKg!5e0!3m2!1sja!2sjp!4v1695005957669!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+      {% if dest.id == 5 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.708800957953!2d136.66140697533115!3d36.561133672316224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8337c4196e471%3A0x3e1251b53e802aa!2z55-z5bed55yM56uL5Lyd57Wx55Sj5qWt5bel6Iq46aSo!5e0!3m2!1sja!2sjp!4v1695006021382!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
+      {% if dest.id == 6 %}
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.795642319987!2d136.65912897533093!3d36.55904007231689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff8339d12c824db%3A0x48adbd92fcae1e14!2z5Zu956uL5bel6Iq46aSo!5e0!3m2!1sja!2sjp!4v1695006061101!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% endif %}
   </div>
 </div>
 
